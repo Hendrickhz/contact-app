@@ -30,29 +30,18 @@ const Navbar = () => {
           Contactify
         </h1>
         {/* simple button before authentication */}
-        <div className={`flex gap-3  lg:gap-5 ${auth ? "hidden" : "flex"}`}>
+        {/* <div className={`flex gap-3  lg:gap-5 ${auth ? "hidden" : "flex"}`}>
           <a href={"/login"}>
             <button className="  outline outline-offset-0 outline-gray-300 py-2  px-3 rounded text-color hover:bg-orange-500 hover:text-white duration-300 lg:hover:text-gray-800">
               Login
             </button>
           </a>
-          <a href={"/register"}>
-            <button className=" bg-orange-500 py-2 shadow-md px-2 rounded lg:hover:bg-orange-400 lg:hover:text-gray-800">
-              Register
-            </button>
-          </a>
-        </div>
+         
+       
+        </div> */}
 
         {/* After authentication */}
-        <div className={`flex items-center gap-5 ${auth ? "flex" : "hidden"}`}>
-          <h3></h3>
-       hi
-          <div className=" flex lg:hidden">
-            <button>
-              {/* <HiOutlineMenuAlt3 onClick={open} size={"2.3rem"} /> */}
-            </button>
-          </div>
-        </div>
+      
 
       </div>
     </>
