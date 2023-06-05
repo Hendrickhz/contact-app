@@ -11,8 +11,8 @@ import Cookies from "js-cookie";
 
 const Navbar = () => {
 
-  const token = Cookies.get("token");
-  const auth = token ? true : false;
+//   const token = Cookies.get("token");
+//   const auth = token ? true : false;
  
 
 ;
