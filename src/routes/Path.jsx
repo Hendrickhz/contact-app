@@ -24,7 +24,7 @@ const Path = () => {
 
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <div className=" flex">
         {/* <div
           className={`hidden lg:flex lg:w-1/5 ${token ? "flex" : "lg:hidden"}`}
