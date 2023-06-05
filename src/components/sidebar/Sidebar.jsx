@@ -1,15 +1,6 @@
-import { Badge } from "@mantine/core";
-import React from "react";
-import { AiOutlinePlus ,AiFillHome} from "react-icons/ai";
-import { BsFillPersonFill, BsTrash } from "react-icons/bs";
-import {
-  MdRecentActors,
-  MdOutlineFavorite,
-  MdOutlineAutoFixHigh,
-} from "react-icons/md";
 
-import "./Sidebar.css";
-import { useSelector } from "react-redux";
+import React from "react";
+
 
 const Sidebar = () => {
   

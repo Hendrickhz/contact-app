@@ -1,11 +1,5 @@
 
 import React from "react";
-import { FaUserCircle } from "react-icons/fa";
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
-
-
-import { useDispatch } from "react-redux";
-import Cookies from "js-cookie";
 
 
 
