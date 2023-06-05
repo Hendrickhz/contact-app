@@ -5,8 +5,8 @@ import React from "react";
 
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import Sidebar from "../sidebar/Sidebar";
-import { useDispatch, useSelector } from "react-redux";
-import Cookies from "js-cookie";
+import {  useSelector } from "react-redux";
+
 import { useLogoutMutation } from "../../redux/api/authApi";
 import { removeUser } from "../../redux/feature/authSlice";
 
@@ -18,7 +18,7 @@ const Navbar = () => {
   const nav = useNavigate();
 
   const [logOut] = useLogoutMutation();
-  const dispatch = useDispatch();
+
 
   const logOutHandler = async () => {
     const { data } = await logOut(token);
@@ -73,9 +73,7 @@ const Navbar = () => {
               </Menu.Item>
             </Menu.Dropdown>
           </Menu>
-          <div className=" flex lg:hidden">
-     
-          </div>
+        
         </div>
         <Drawer
           opened={opened}
