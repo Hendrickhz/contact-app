@@ -4,7 +4,7 @@ import React from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { Link, useNavigate } from "react-router-dom";
-import Sidebar from "../sidebar/Sidebar";
+// import Sidebar from "../sidebar/Sidebar";
 import { useDispatch } from "react-redux";
 import Cookies from "js-cookie";
 import { useLogoutMutation } from "../../redux/api/authApi";
@@ -91,7 +91,7 @@ const Navbar = () => {
             <Link to={"/dashboard"} className=" text-3xl">
               <div className=" md:text-center font-semibold">Contactify</div>
             </Link>
-            <Sidebar />
+            {/* <Sidebar /> */}
           </div>
         </Drawer>
       </div>
