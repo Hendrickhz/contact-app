@@ -1,22 +1,22 @@
-import {  Menu } from "@mantine/core";
+
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-import {  useNavigate } from "react-router-dom";
+
 
 import { useDispatch } from "react-redux";
 import Cookies from "js-cookie";
-import { useLogoutMutation } from "../../redux/api/authApi";
-import { removeUser } from "../../redux/feature/authSlice";
+
+
 
 const Navbar = () => {
 
   const token = Cookies.get("token");
   const auth = token ? true : false;
-  const nav = useNavigate();
+ 
 
-  const [logOut] = useLogoutMutation();
-  const dispatch = useDispatch();
+;
+
 
  
 
@@ -49,7 +49,7 @@ const Navbar = () => {
        hi
           <div className=" flex lg:hidden">
             <button>
-              <HiOutlineMenuAlt3 onClick={open} size={"2.3rem"} />
+              {/* <HiOutlineMenuAlt3 onClick={open} size={"2.3rem"} /> */}
             </button>
           </div>
         </div>
