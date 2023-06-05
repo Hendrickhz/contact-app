@@ -7,7 +7,7 @@ import {
   MdOutlineFavorite,
   MdOutlineAutoFixHigh,
 } from "react-icons/md";
-import {  useNavigate } from "react-router-dom";
+
 import "./Sidebar.css";
 import { useSelector } from "react-redux";
 
@@ -15,18 +15,18 @@ const Sidebar = () => {
   const contactsData = useSelector((state) => state.contactSlice.contacts);
   const favorite = useSelector((state) => state.contactSlice.favorite);
 
-  const nav = useNavigate()
+
 
   return (
     <>
       <div className=" w-fit h-[80vh] lg:h-[85vh] flex flex-col py-5 gap-5 lg:gap-10 fixed ">
         <div className=" w-full px-0 lg:px-2 flex">
-          <div className=" flex items-center gap-3 shadow-xl bg-orange-100 text-xl py-2 px-5 justify-center rounded-full" onClick={() => {
-            return nav('/contacts/create')
+          {/* <div className=" flex items-center gap-3 shadow-xl bg-orange-100 text-xl py-2 px-5 justify-center rounded-full" onClick={() => {
+             nav('/contacts/create')
           }}>
             <AiOutlinePlus size={"1.5rem"} />
             <button className="">Create contact</button>
-          </div>
+          </div> */}
         </div>
         <div className=" w-full  lg:px-0">
           <a
