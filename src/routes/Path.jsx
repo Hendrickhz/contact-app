@@ -24,13 +24,13 @@ const Path = () => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className=" flex">
-        <div
+        {/* <div
           className={`hidden lg:flex lg:w-1/5 ${token ? "flex" : "lg:hidden"}`}
         >
           <Sidebar />
-        </div>
+        </div> */}
         <div
           className={`w-full lg:w-4/5 py-5 ${token ? "lg:w-4/5" : "lg:w-full"}`}
         >
