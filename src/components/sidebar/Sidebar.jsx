@@ -12,8 +12,7 @@ import "./Sidebar.css";
 import { useSelector } from "react-redux";
 
 const Sidebar = () => {
-  const contactsData = useSelector((state) => state.contactSlice.contacts);
-  const favorite = useSelector((state) => state.contactSlice.favorite);
+  
 
 
 
