@@ -7,7 +7,7 @@ import {
   MdOutlineFavorite,
   MdOutlineAutoFixHigh,
 } from "react-icons/md";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import "./Sidebar.css";
 import { useSelector } from "react-redux";
 
@@ -29,17 +29,17 @@ const Sidebar = () => {
           </div>
         </div>
         <div className=" w-full  lg:px-0">
-          <Link
-            to={"/"}
+          <a
+            href={"/"}
             className="flex items-center justify-between rounded-full text-md py-2 lg:rounded-none lg:rounded-e-full px-5 menu_hover"
           >
             <div className="flex gap-5 items-center">
               <AiFillHome />
               <button>Home</button>
             </div>
-          </Link>
-          <Link
-            to={"/dashboard"}
+          </a>
+          <a
+            href={"/dashboard"}
             className={
               "flex items-center justify-between rounded-full text-md py-2 lg:rounded-none lg:rounded-e-full px-5 menu_hover"
             }
@@ -49,18 +49,18 @@ const Sidebar = () => {
               <button>Contacts</button>
             </div>
             <Badge color="yellow">{contactsData?.length}</Badge>
-          </Link>
-          <Link
-            to={"/recently_search"}
+          </a>
+          <a
+            href={"/recently_search"}
             className="flex items-center justify-between rounded-full text-md py-2 lg:rounded-none lg:rounded-e-full px-5 menu_hover"
           >
             <div className="flex gap-5 items-center">
               <MdRecentActors />
               <button>Recently visit</button>
             </div>
-          </Link>
-          <Link
-            to={"/favourite"}
+          </a>
+          <a
+            href={"/favourite"}
             className="flex items-center justify-between rounded-full text-md py-2 lg:rounded-none lg:rounded-e-full px-5 menu_hover"
           >
             <div className="flex gap-5 items-center">
@@ -68,28 +68,28 @@ const Sidebar = () => {
               <button>Favourite</button>
             </div>
             <Badge color="yellow">{favorite?.length}</Badge>
-          </Link>
+          </a>
         </div>
         <div className=" w-full">
           <h1 className=" text-xl px-5 py-2 font-semibold">Fix and manage</h1>
-          <Link
-            to={"/Merge_fix"}
+          <a
+            href={"/Merge_fix"}
             className="flex items-center justify-between rounded-full text-md py-2 lg:rounded-none lg:rounded-e-full px-5 menu_hover"
           >
             <div className="flex gap-5 items-center">
               <MdOutlineAutoFixHigh />
               <button>Merge and fix</button>
             </div>
-          </Link>
-          <Link
-            to={"/trash"}
+          </a>
+          <a
+            href={"/trash"}
             className="flex items-center justify-between rounded-full text-md py-2 lg:rounded-none lg:rounded-e-full px-5 menu_hover"
           >
             <div className="flex gap-5 items-center">
               <BsTrash />
               <button>Bin</button>
             </div>
-          </Link>
+          </a>
         </div>
       </div>
     </>

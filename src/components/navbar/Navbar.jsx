@@ -1,17 +1,16 @@
-import { Drawer, Menu } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
+import {  Menu } from "@mantine/core";
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { Link, useNavigate } from "react-router-dom";
-// import Sidebar from "../sidebar/Sidebar";
+
 import { useDispatch } from "react-redux";
 import Cookies from "js-cookie";
 import { useLogoutMutation } from "../../redux/api/authApi";
 import { removeUser } from "../../redux/feature/authSlice";
 
 const Navbar = () => {
-  const [opened, { open, close }] = useDisclosure(false);
+
   const token = Cookies.get("token");
   const auth = token ? true : false;
   const nav = useNavigate();
@@ -81,19 +80,7 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        {/* <Drawer
-          opened={opened}
-          onClose={close}
-          size="60%"
-          overlayProps={{ opacity: 0.5, blur: 4 }}
-        >
-          <div onClick={close}>
-            <Link to={"/dashboard"} className=" text-3xl">
-              <div className=" md:text-center font-semibold">Contactify</div>
-            </Link>
-          
-          </div>
-        </Drawer> */}
+
       </div>
     </>
   );
