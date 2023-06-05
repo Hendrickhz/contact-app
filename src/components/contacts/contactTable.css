@@ -1,0 +1,13 @@
+.parent:hover .child{
+    opacity: 1;
+}
+.child{
+    opacity: 0;
+}
+
+@media (max-width: 767px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }
+
